@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.scss'
 import { Link } from "react-router-dom";
-
+import icon from '../header/photo1658659333.jpeg'
 const Header = (props) => {
     const { handleSearch, setInput, setHome, home, input } = props
     const keyPress = (e) => (e.key == "Enter" ? handleSearch() : "");
@@ -28,8 +28,8 @@ const Header = (props) => {
                 </div>
                 
                 <img class="profile-img"
-                    src="https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                    alt=""></img>
+                    src={icon}
+                    alt=""/>
             </div>
         </div>
     );
